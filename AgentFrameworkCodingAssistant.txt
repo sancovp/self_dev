@@ -1,0 +1,58 @@
+﻿MetaAssistant
+
+
+AgentFrameworkCodeAssistant
+* Instructions
+   * Explain project
+      * Explain files
+      * Explain UX flows
+      * Explain development loops
+   * Give CICD
+* Has brainbrane of codebase??
+   * Use brainbrane from CICD (this is in update_CICD)
+   * * Has each module as a file in a vector store (auto load these)
+   * Base
+      * Module
+      * Assistant
+   * Meta 
+      * Module
+      * Assistant
+   * Super
+      * Module
+      * Assistant
+   * LaceBuildings
+   * OAI Buildings
+   * Models
+   * UserContext
+   * Action Services
+   * Functions dir
+      * Construct_andor
+         * Chain
+      * Execute Lattice
+      * Construct chattype
+
+
+* Tools
+   * Write code file to project dir
+   * Read code file in project dir
+   * Diff code files
+   * Run code (validate)
+   * CICD_update
+      * Func
+         * Push projects/queue dir to “debugging”
+      * Monorepo
+         * Production
+            * Deployed
+               * Running
+                  * User Project Dir
+                     * Projects/codebases/
+                        * Brainbrane Clone of Production, for development purposes
+                     * Projects/cwd/
+                        * Wip files
+                     * Projects/queue
+                        * Files to send to next version
+         * Staging
+            * Confirmed working by human
+         * Debugging
+            * Updated Dev, with next changes
+            * Tested by human

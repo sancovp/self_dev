@@ -1,0 +1,56 @@
+﻿Definitive Clarification On The Nature of AI Species
+1. AI
+   1. Operated
+      1. Assistant
+         1. Interaction Schema
+            1. User -input_to-> Assistant
+            2. Assistant -output_to-> User
+      2. Agent
+         1. Interaction Schema
+            1. User -input_to-> Assistant
+               1. Assistant -output_to-> BackgroundAssistant (AKA Agent Persona_1, the Assistant now acting as a 2-Assistant)
+               2. BackgroundAssistant -output_to-> N_BackgroundAssistant (AKA Agent Persona_N)
+                  1. Complete work
+               3. Summarizer -output_to-> Assistant
+            2. Assistant -output_to-> User
+               1. User acts as Rejector
+         2. Includes loops like ReACT and CoT
+      3. MetaAgent
+         1. Interaction Schema
+            1. User -input_to-> Assistant
+               1. Assistant -output_to-> BackgroundAssistant (AKA Agent Persona_1
+               2. BackgroundAssistant -output_to-> N_BackgroundAssistant (AKA Agent Persona_N)
+                  1. Complete work
+                  2. Agent system acts as rejector
+               3. Work Thread -input_to-> Rejector
+               4. Rejector -outputs_rejection_status_to-> Summarizer
+               5. Summarizer -output_to-> Assistant
+            2. Assistant -output_to-> User
+               1. User acts as 2-Rejector, and this multiplication goes outward whereas adding an n-Assistant always goes inwards
+         2. Includes loops like tree search
+      4. SuperAgent
+         1. Interaction Schema
+            1. The same as a MetaAgent, except it has the same relationship to the MetaAgent as the MetaAgent has to the Agent.
+   2. Autonomous AI
+      1. AutoAgent
+         1. Interaction Schema
+            1. The same as a SuperAgent, except it has a heartbeat, lifedrive, and deathdrive, as well as a TWI, and an awakening script, a workday, and is called into an assembly_line by an orchestrator
+      2. Orchestrator
+         1. Interaction Schema
+            1. Same as an AutoAgent, except it has the relationship to AutoAgent that SuperAgents have to MetaAgents.
+      3. Operator
+         1. Interaction Schema
+            1. Same as an Orchestrator, except it has the same relationship to Orchestrators as SuperAgents have to MetaAgents.
+      4. Ontomata
+         1. Interaction Schema
+            1. Same as an Operator, except it has the same relationship to Operators as SuperAgents have to MetaAgents, and it uses its autonomy to engineer a self-domain ontology.
+      5. GOD “General Ontology Designer”
+         1. Interaction Schema
+            1. Same as an Ontomata, except it has the relationship to Ontomata as SuperAgents have to MetaAgents, and it can dynamically generate code through a self-patterned code ontology.
+   3. DUO
+      1. DUO of Dual Space Unifying Operators
+         1. Interaction Schema
+            1. Same as an Agent, except the chat lace is:
+               1. BackgroundAssistantChallengerArchetype1 -> BackgroundAssistantProviderArchetype
+                  1. For n turns
+               2. And they use a signal when they believe the work is done, this pattern is matched via regex, and the chat turns are stopped and the result is returned to the main assistant thread
